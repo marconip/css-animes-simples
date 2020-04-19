@@ -1,0 +1,188 @@
+
+.anime-entrarBaixo {
+    animation: 1s ease 0s 1 anime-entrarBaixo;
+}
+
+@keyframes anime-entrarBaixo {
+    0% {
+        transform: translateY(150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anime-entrarCima {
+    animation: 1s ease 0s 1 anime-entrarCima;
+}
+
+@keyframes anime-entrarCima {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anime-entrarDireita {
+    animation: 1s ease 0s 1 anime-entrarDireita;
+}
+
+@keyframes anime-entrarDireita {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anime-entrarEsquerda {
+    animation: 1s ease 0s 1 anime-entrarEsquerda;
+}
+
+@keyframes anime-entrarEsquerda {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anime-sairCima {
+    animation: 1s ease 0s 1 anime-sairCima;
+}
+
+@keyframes anime-sairCima {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+.anime-sairBaixo {
+    animation: 1s ease 0s 1 anime-sairBaixo;
+}
+
+@keyframes anime-sairBaixo {
+    0% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anime-sairEsquerda {
+    animation: 1s ease 0s 1 anime-sairEsquerda;
+}
+
+@keyframes anime-sairEsquerda {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.anime-sairDireita {
+    animation: 1s ease 0s 1 anime-sairDireita;
+}
+
+@keyframes anime-sairDireita {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.anime-aparecer {
+    animation: 2s ease 0s 1 anime-aparecer;
+}
+
+@keyframes anime-aparecer {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anime-desaparecer {
+    animation: 2s ease 0s 1 anime-desaparecer;
+}
+
+@keyframes anime-desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anime-aumentar {
+    animation: 1s ease 0s 1 anime-aumentar;
+}
+
+@keyframes anime-aumentar {
+    0% {
+        font-size: 6px;
+    }
+    75% {
+        font-size: 96px;
+    }
+    100% {
+        font-size: 76px;
+    }
+}
+
+.anime-diminuir {
+    animation: 1s ease 0s 1 anime-diminuir;
+}
+
+@keyframes anime-diminuir {
+    0% {
+        font-size: 76px;
+    }
+    50% {
+        font-size: 96px;
+    }
+    100% {
+        font-size: 6px;
+    }
+}
+
+.anime-cores {
+    animation: 3s ease 0s 1 anime-cores;
+}
+
+@keyframes anime-cores {
+    0% {
+        color: orangered;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: orangered;
+    }
+}
+
+.anime-exemploCom3 {
+    animation: 1s ease 0s 1 anime-aumentar, 3s ease 1s 1 anime-cores, 1s ease 4s 1 anime-sairCima;
+}

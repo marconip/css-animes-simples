@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="cssanime.ico">
+    <link rel="stylesheet" href="animacao.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Animações e Transições</title>
+</head>
+
+
+<body>
+    <div class="container anime-aparecer">
+        <div class="mostrarAnimacao">
+            <h1>Animação</h1>
+        </div>
+        <div class="mostrarClasse">
+            <p> use a classe: <strong> </strong> </p>
+        </div>
+        <div class="botoes">
+            <a href="javascript:void(0)" data-classe="anime-entrarBaixo">entrada por baixo</a>
+            <a href="javascript:void(0)" data-classe="anime-entrarCima">entrada por cima</a>
+            <a href="javascript:void(0)" data-classe="anime-entrarEsquerda">entrada pela esquerda </a>
+            <a href="javascript:void(0)" data-classe="anime-entrarDireita">entrada pela direita</a>
+            <a href="javascript:void(0)" data-classe="anime-sairCima">sair para cima</a>
+            <a href="javascript:void(0)" data-classe="anime-sairBaixo">sair para baixo</a>
+            <a href="javascript:void(0)" data-classe="anime-sairEsquerda">sair para esquerda</a>
+            <a href="javascript:void(0)" data-classe="anime-sairDireita">sair para direita</a>
+            <a href="javascript:void(0)" data-classe="anime-aparecer">aparecer</a>
+            <a href="javascript:void(0)" data-classe="anime-desaparecer">desaparecer</a>
+            <a href="javascript:void(0)" data-classe="anime-aumentar">aumentar <span>&#10045;</span></a>
+            <a href="javascript:void(0)" data-classe="anime-diminuir">diminuir <span>&#10045;</span></a>
+            <a href="javascript:void(0)" data-classe="anime-cores">mudar cor <span>&#10045;&#10045;</span></a>
+            <a href="javascript:void(0)" data-classe="anime-exemploCom3">aumentar → mudar cor → sair para cima </a>
+        </div>
+        <div class="observacoes">
+            <p><span>&#10045;</span> Configurar CSS conforme o uso, em tags de texto, usa-se "font-size" em outras tag
+                exemplo &lt;div&gt; usa-se "width"<br />
+                <span>&#10045;&#10045;</span> Configurar CSS conforme o uso, em tags de textos usa-se "color" em outras tag
+                exemplo &lt;div&gt; usa-se "background-color"</p>
+        </div>
+
+        <div class="inserirAnimacao">
+            <h2 class="teste1">Como inserir a animação</h2>
+            <p>
+                1. Salve o arquivo animacao.css em seu projeto;<br />
+                2. Copie a classe que aparece no texto verde e insira na tag (HTML) que deseja fazer a animação<br />
+            </p>
+        </div>
+
+        <div class="exemplos">
+            <h2>HTML Exemplo</h2>
+            &lt;div class="<span class="preto">anime-desaparecer</span>"&gt; &lt;/div &gt;
+        </div>
+
+
+        <div class="exemplos">
+            <h2>CSS Exemplo</h2>
+            <span class="preto">.anime-desaparecer </span> {
+                animation: 2s ease 0s 1 <span class="preto">desaparecer</span>
+            }
+<pre>
+<code> 
+@keyframes <span class="preto">desaparecer</span> {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+</code>
+</pre>
+        </div>
+
+        <div class="funciona">
+            <h2>Editar o tempo, veja como funciona cada elemento</h2>
+            <p>Passe o mouse por cima de cada elemento e veja sua função ou <a href="javascript:void(0)">ver todas elementos</a></p>
+            
+            <strong class="elementos"> animation: 2s  ease  0s  1  desaparecer </strong>
+            <i class="propriedade">animation</i>
+            <span><strong>animation:</strong> Propriedade - Contém todos elementos que manipulam a animação</span>
+            <i class="duracao">2s </i>
+            <span><strong>2s: </strong> Duração da animação - Quanto tempo, em segundos ou milisegundos, durará um ciclo da animação (o padrão é 0) 1 = 1 minuto.</span>
+            <i class="funcao">ease </i>
+            <span><strong>ease: </strong>Função de tempo da animação - Forma como a animação progride no tempo (o padrão é ease). Valores já pré-definidos que são: linear, ease, ease-in, ease-out e ease-in-out;</span>
+            <i class="inicio">0s </i>
+            <span><strong>0s: </strong>Tempo de atrazo da animação - Define a partir de quanto tempo a animação vai se iniciar (o padrão é 0)</span>
+            <i class="repeticao">1 </i>
+            <span><strong>1: </strong>Número de repetição - Determina o número de vezes que a animação vai se repetir (o padrão é 1). Podemos deixar a animação repetindo infinitamente, basta especificar o valor infinite.</span>
+            <i class="chamar">desaparecer </i>
+            <span><strong>desaparecer: </strong>Nome da animação - Essa função chama os css @keyframes que contém os tipos de animação</span>
+        </div>
+
+
+    </div>
+    <footer>
+        <a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener">Veja também animate css</a>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Animations/Usando_anima%C3%A7%C3%B5es_CSS" target="_blank" rel="noopener">Usando animações CSS</a>
+        <a href="https://tableless.com.br/transition-e-animation/" target="_blank" rel="noopener">CSS Transition e CSS Animation</a>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

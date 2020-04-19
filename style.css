@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6a6a6a;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 22px;
+}
+
+pre {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 76px;
+    text-align: center;
+    line-height: 300px;
+    color: orangered;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: #00BAFF;
+    margin: 15px 0px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+a {
+    color: #00BAFF;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(0, 142, 194);
+}
+
+.mostrarClasse {
+    text-align: center;
+    color: #008000;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoes a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #555;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 0px 0px #777;
+    transition: none;
+}
+
+.botoes a:hover {
+    color: #fff;
+    border-color: #777;
+    background-color: #00BAFF;
+}
+
+.botoes a:active {
+    background-color: rgb(0, 142, 194);
+    box-shadow: 0px 0px 0px 0px #777;
+}
+
+.observacoes {
+    text-align: center;
+}
+
+a span, .observacoes span {
+    font-size: 12px;
+    color: #ff4500;
+}
+
+.preto {
+    color: #000;
+    font-weight: 600;
+}
+
+.funciona {
+    padding-bottom: 85px;
+}
+
+.funciona span strong, .funciona strong {
+    color: orangered;
+}
+
+.funciona i {
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.funciona i:hover {
+    color: #fff;
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+.funciona i+span {
+    display: none;
+    position: absolute;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.funciona i:hover+span {
+    display: block;
+    animation: 1s ease 0s 1 anime-aparecer;
+}
+
+.funciona.ver-todos i, .funciona .elementos {
+    display: none;
+}
+
+.funciona.ver-todos span {
+    display: block;
+    position: relative;
+    animation: 1s ease 0s 1 anime-entrarCima;
+}
+
+.funciona.ver-todos strong {
+    display: block;
+    animation: 1s ease 0s 1 anime-entrarCima;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    background-color: #00baff;
+    border-top: 2px solid #fff;
+    box-shadow: 0px 0px 0px 2px #00baff;
+}
+
+footer a {
+    color: #b4f6ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .botoes {
+        overflow: auto;
+        height: 230px;
+        border-bottom: 2px solid #999;
+    }
+    .botoes a {
+        width: 100%;
+        padding: 15px 10px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer a {
+        margin: 10px;
+    }
+}
